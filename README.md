@@ -13,9 +13,13 @@ gem uninstall bundler  --version ' 2.0.1'
 
 gem install bundler --version '1.17.3'
 
-can not reesolve dependencies......
+can not resolve dependencies......
 
 instead get gemfile and gemfile.lock from current helpy project?
+
+testing workflow
+====
+local -> htest-rose github -> server
 
 License
 =======
