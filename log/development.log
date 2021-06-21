@@ -1,0 +1,67 @@
+ActsAsTaggableOn.delimiter is deprecated and will be removed from v4.0+, use  a ActsAsTaggableOn.default_parser instead
+
+ActsAsTaggableOn.delimiter is deprecated and will be removed from v4.0+, use  a ActsAsTaggableOn.default_parser instead
+
+BreadcrumbsOnRails detected it won't be overridden. To use methods from this gem you need to call them using bootstrap prefix i.e. add_bootstrap_breadcrumb and render_bootstrap_breadcrumbs.
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-21 08:45:33 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (5.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocalesController#redirect_on_locale as HTML
+  [1m[35mAppSettings Load (2.8ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "i18n.available_locales"]]
+  [1m[36mAppSettings Load (0.6ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "email.mail_service"]]
+  [1m[35mAppSettings Load (0.4ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "email.mail_smtp"]]
+  [1m[36mAppSettings Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "email.mail_port"]]
+  [1m[35mAppSettings Load (0.4ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "email.smtp_mail_username"]]
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "email.smtp_mail_password"]]
+  [1m[35mAppSettings Load (0.6ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "email.mail_domain"]]
+  [1m[36mAppSettings Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "email.send_email"]]
+  [1m[35mAppSettings Load (0.5ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "cloudinary.cloud_name"]]
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "cloudinary.api_key"]]
+  [1m[35mAppSettings Load (0.3ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "cloudinary.api_secret"]]
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "settings.recaptcha_site_key"]]
+  [1m[35mAppSettings Load (0.2ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "settings.recaptcha_api_key"]]
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "settings.enforce_ssl"]]
+  [1m[35mAppSettings Load (0.3ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "theme.active"]]
+Redirected to http://0.0.0.0:3000/en
+Completed 301 Moved Permanently in 197ms (ActiveRecord: 23.3ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2021-06-21 08:45:35 +0400
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mAppSettings Load (0.2ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "onboarding.complete"]]
+Redirected to http://0.0.0.0:3000/onboarding/index
+Filter chain halted as :show_onboard rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/onboarding/index" for 127.0.0.1 at 2021-06-21 08:45:35 +0400
+Processing by OnboardingController#index as HTML
+  [1m[35mUser Load (196.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAppSettings Load (0.4ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "email.admin_email"]]
+  [1m[35mAppSettings Load (0.3ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "email.from_email"]]
+  Rendered /Users/kaymo/.rvm/gems/ruby-2.5.1/bundler/gems/helpy_onboarding-bb75cec5a680/app/views/onboarding/index.html.erb within layouts/onboard (69116.3ms)
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "settings.site_name"]]
+  [1m[35mAppSettings Load (0.3ms)[0m  SELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1  [["var", "design.favicon"]]
+  [1m[36mAppSettings Load (0.3ms)[0m  [1mSELECT  "settings".* FROM "settings" WHERE (thing_type is NULL and thing_id is NULL) AND "settings"."var" = $1  ORDER BY "settings"."id" ASC LIMIT 1[0m  [["var", "settings.google_analytics_enabled"]]
+  Rendered layouts/_google_analytics.html.erb (2.9ms)
+  Rendered layouts/_head.html.erb (4790.8ms)
+Completed 200 OK in 74763ms (Views: 74422.3ms | ActiveRecord: 216.2ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2021-06-21 08:46:54 +0400
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+Redirected to http://0.0.0.0:3000/onboarding/index
+Filter chain halted as :show_onboard rendered or redirected
+Completed 302 Found in 188ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/onboarding/index" for 127.0.0.1 at 2021-06-21 08:46:54 +0400
+Processing by OnboardingController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/kaymo/.rvm/gems/ruby-2.5.1/bundler/gems/helpy_onboarding-bb75cec5a680/app/views/onboarding/index.html.erb within layouts/onboard (38.3ms)
+  Rendered layouts/_google_analytics.html.erb (2.6ms)
+  Rendered layouts/_head.html.erb (3185.6ms)
+Completed 200 OK in 3588ms (Views: 3576.6ms | ActiveRecord: 0.5ms)

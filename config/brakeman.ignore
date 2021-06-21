@@ -1,0 +1,308 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 4,
+      "fingerprint": "0bfb69669fd64e67c3c4f3e3add77f2d4a45fd7518a55c0085c4d36f42b9d202",
+      "check_name": "LinkToHref",
+      "message": "Potentially unsafe model attribute in `link_to` href",
+      "file": "app/views/posts/_attachment.html.erb",
+      "line": 16,
+      "link": "https://brakemanscanner.org/docs/warning_types/link_to_href",
+      "code": "link_to(image_tag((Unresolved Model).new, :style => \"width: 125px; height: 125px\"), (Unresolved Model).new.url, :class => \"screenshot-link\", :target => \"blank\")",
+      "render_path": [
+        {
+          "type": "controller",
+          "class": "PostsController",
+          "method": "up_vote",
+          "line": 80,
+          "file": "app/controllers/posts_controller.rb",
+          "rendered": {
+            "name": "posts/up_vote",
+            "file": "app/views/posts/up_vote.js.erb"
+          }
+        },
+        {
+          "type": "template",
+          "name": "posts/up_vote",
+          "line": 2,
+          "file": "app/views/posts/up_vote.js.erb",
+          "rendered": {
+            "name": "posts/_post",
+            "file": "app/views/posts/_post.html.erb"
+          }
+        },
+        {
+          "type": "template",
+          "name": "posts/_post",
+          "line": 42,
+          "file": "app/views/posts/_post.html.erb",
+          "rendered": {
+            "name": "posts/_attachment",
+            "file": "app/views/posts/_attachment.html.erb"
+          }
+        }
+      ],
+      "location": {
+        "type": "template",
+        "template": "posts/_attachment"
+      },
+      "user_input": "(Unresolved Model).new.url",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "104064e677313b94825572a4d05d8531c24cdb3e90326cbf934925283754c18e",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/helpy/views/layouts/helpy.html.erb",
+      "line": 9,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.header_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/helpy"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "370d2fa2caec16416afe01767cd0e0ba1df8e411fd8f91c1644acd4b4f583923",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/nordic/views/layouts/nordic.html.erb",
+      "line": 137,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.footer_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/nordic"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "82925abaa4717dd2e9c4e7710c89d988fa5474a4e2bc6c1ddefd1b967ff4790c",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/views/admin/topics/_ticket.html.erb",
+      "line": 99,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "User.mentionable",
+      "render_path": [
+        {
+          "type": "controller",
+          "class": "Admin::PostsController",
+          "method": "change_owner_new_user",
+          "line": 128,
+          "file": "app/controllers/admin/posts_controller.rb",
+          "rendered": {
+            "name": "admin/posts/update",
+            "file": "app/views/admin/posts/update.js.erb"
+          }
+        },
+        {
+          "type": "template",
+          "name": "admin/posts/update",
+          "line": 7,
+          "file": "app/views/admin/posts/update.js.erb",
+          "rendered": {
+            "name": "admin/topics/_ticket",
+            "file": "app/views/admin/topics/_ticket.html.erb"
+          }
+        }
+      ],
+      "location": {
+        "type": "template",
+        "template": "admin/topics/_ticket"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": "This is not a true attribute of the model. It is a method that returns some JSON in the Helpy Cloud gem."
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "925adb63da2f346f5d43a340fd35b0306c567ee4d72cac4a5d2032100fb1c48a",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/singular/views/layouts/singular.html.erb",
+      "line": 28,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.header_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/singular"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "File Access",
+      "warning_code": 16,
+      "fingerprint": "c6fb122f62bf327dfd3817ae58e788d2a30839d35d0ec7af830c981e5b302368",
+      "check_name": "SendFile",
+      "message": "Model attribute used in file name",
+      "file": "app/controllers/admin/settings_controller.rb",
+      "line": 51,
+      "link": "https://brakemanscanner.org/docs/warning_types/file_access/",
+      "code": "send_file(File.join(Theme.find(params[:theme]).path, Theme.find(params[:theme]).thumbnail), :type => \"image/png\", :disposition => \"inline\", :stream => false)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Admin::SettingsController",
+        "method": "preview"
+      },
+      "user_input": "Theme.find(params[:theme]).thumbnail",
+      "confidence": "Weak",
+      "note": "Theme is a class, not a database table"
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "cc99fa0f83f3b063b2c416dca55ae681dbd2ff18f215107813227b791d0ef707",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/light/views/layouts/light.html.erb",
+      "line": 9,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.header_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/light"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "dcc33b3a2a7e4386162f09b793ab6cbc2c3a24337a1ed6b1df342480a1706315",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/flat/views/layouts/flat.html.erb",
+      "line": 9,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.header_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/flat"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "de4faa81bffd2afbb8ee6e71a1419535c722da167d644b1fe718193686c697cf",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/singular/views/layouts/singular.html.erb",
+      "line": 180,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.footer_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/singular"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "de92e4699ca17a6614be23a3a3e8488bd87ecd89312e2e2c3ceeb97f57bc53c6",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/nordic/views/layouts/nordic.html.erb",
+      "line": 9,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.header_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/nordic"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "e17030e70ed23dfd5f7aae7eaad4247c400cc77f8b7635a1d7c66a743c84284e",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/flat/views/layouts/flat.html.erb",
+      "line": 124,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.footer_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/flat"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "e3b5a60880951a03eda817f8169cb1ef6d0ba091c755c486064671df26412d57",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/helpy/views/layouts/helpy.html.erb",
+      "line": 68,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.footer_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/helpy"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "eaaba6314a917f1c96a0d6d87868f542d3007e52e5d96ea288965d92ff1232c0",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/themes/light/views/layouts/light.html.erb",
+      "line": 124,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "AppSettings[\"design.footer_js\"]",
+      "render_path": null,
+      "location": {
+        "type": "template",
+        "template": "layouts/light"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "note": ""
+    }
+  ],
+  "updated": "2019-08-08 21:14:22 -0600",
+  "brakeman_version": "4.6.1"
+}

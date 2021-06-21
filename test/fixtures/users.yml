@@ -1,0 +1,181 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                     :integer          not null, primary key
+#  login                  :string
+#  identity_url           :string
+#  name                   :string
+#  admin                  :boolean          default(FALSE)
+#  bio                    :text
+#  signature              :text
+#  role                   :string           default("user")
+#  home_phone             :string
+#  work_phone             :string
+#  cell_phone             :string
+#  company                :string
+#  street                 :string
+#  city                   :string
+#  state                  :string
+#  zip                    :string
+#  title                  :string
+#  twitter                :string
+#  linkedin               :string
+#  thumbnail              :string
+#  medium_image           :string
+#  large_image            :string
+#  language               :string           default("en")
+#  assigned_ticket_count  :integer          default(0)
+#  topics_count           :integer          default(0)
+#  active                 :boolean          default(TRUE)
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
+#  email                  :string           default(""), not null
+#  encrypted_password     :string           default(""), not null
+#  reset_password_token   :string
+#  reset_password_sent_at :datetime
+#  remember_created_at    :datetime
+#  sign_in_count          :integer          default(0), not null
+#  current_sign_in_at     :datetime
+#  last_sign_in_at        :datetime
+#  current_sign_in_ip     :inet
+#  last_sign_in_ip        :inet
+#  provider               :string
+#  uid                    :string
+#  invitation_token       :string
+#  invitation_created_at  :datetime
+#  invitation_sent_at     :datetime
+#  invitation_accepted_at :datetime
+#  invitation_limit       :integer
+#  invited_by_id          :integer
+#  invited_by_type        :string
+#  invitations_count      :integer          default(0)
+#  invitation_message     :text
+#  time_zone              :string           default("UTC")
+#  profile_image          :string
+#  notify_on_private      :boolean          default(FALSE)
+#  notify_on_public       :boolean          default(FALSE)
+#  notify_on_reply        :boolean          default(FALSE)
+#  account_number         :string
+#  priority               :string           default("normal")
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  id: 1
+  login: admin
+  identity_url: MyString
+  name: Admin User
+  email: admin@test.com
+  admin: true
+  role: admin
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+  notify_on_private: true
+  notify_on_public: true
+  notify_on_reply: true
+
+system:
+  id: 2
+  login: system
+  identity_url: MyString
+  name: System
+  email: system@test.com
+  admin: false
+  role: user
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+  notify_on_private: true
+  notify_on_public: true
+  notify_on_reply: true
+
+user:
+  id: 9
+  login: scott
+  identity_url: MyString
+  name: Scott Miller
+  email: scott.miller@test.com
+  admin: false
+  role: user
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+
+user2:
+  id: 3
+  login: smith
+  identity_url: MyString
+  name: Scott Smith
+  email: scott.smith@test.com
+  admin: false
+  role: user
+
+oauth_user:
+  id: 4
+  login: test
+  identity_url: MyString
+  name: Scott Miller
+  email: scott.test@test.com
+  admin: false
+  role: user
+  provider: github
+
+another_admin:
+  id: 5
+  login: admin2
+  identity_url: MyString
+  name: Admin Guy
+  email: guy@test.com
+  admin: false
+  role: admin
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+  notify_on_private: true
+  notify_on_public: true
+  notify_on_reply: true
+
+agent:
+  id: 6
+  login: agent
+  identity_url: MyString
+  name: Agent
+  email: agent@test.com
+  admin: false
+  role: agent
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+  notify_on_private: true
+  notify_on_public: true
+  notify_on_reply: true
+  bio: 'some bio'
+  signature: 'the signature'
+  work_phone: '999'
+  cell_phone: '888'
+  company: 'company'
+  street: '123 main'
+  city: 'akron'
+  state: 'oh'
+  zip: '45646'
+  title: 'title'
+  twitter: '@tweet'
+  linkedin: 'erge r'
+  language: 'en'
+  priority: normal
+  active: true
+  time_zone:
+
+editor:
+  id: 7
+  login: editor
+  identity_url: MyString
+  name: Editor
+  email: editor@test.com
+  admin: false
+  role: editor
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+
+user_inactive:
+  id: 8
+  login: user_inactive
+  identity_url: MyString
+  name: User Inactive
+  email: inactive@test.com
+  admin: false
+  role: user
+  active: false
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK

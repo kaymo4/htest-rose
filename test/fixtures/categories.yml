@@ -1,0 +1,76 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id               :integer          not null, primary key
+#  name             :string
+#  icon             :string
+#  keywords         :string
+#  title_tag        :string
+#  meta_description :string
+#  rank             :integer
+#  front_page       :boolean          default(FALSE)
+#  active           :boolean          default(TRUE)
+#  permalink        :string
+#  section          :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  visibility       :string           default("all")
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  active: true
+  front_page: true
+  rank: 10
+  visibility: 'all'
+
+two:
+  id: 2
+  name: active not featured
+  active: true
+  front_page: false
+  rank: 20
+  visibility: 'all'
+
+three:
+  id: 3
+  name: not active
+  active: false
+  front_page: false
+  rank: 30
+  visibility: 'all'
+
+four:
+  id: 4
+  name: some title
+  active: true
+  front_page: true
+  rank: 40
+  visibility: 'all'
+
+six:
+  id: 6
+  name: internal title
+  active: true
+  front_page: true
+  rank: 40
+  visibility: 'internal'
+
+seven:
+  id: 7
+  name: another internal title
+  active: true
+  front_page: true
+  rank: 40
+  visibility: 'internal'
+
+common_replies:
+  id: 5
+  name: Common Replies
+  active: true
+  front_page: true
+  rank: 0
+  visibility: 'internal'

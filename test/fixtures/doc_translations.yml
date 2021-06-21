@@ -1,0 +1,62 @@
+one_translation:
+  doc_id: 1
+  title: Article 1
+  body: article1 text
+  keywords: My article keywords
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+fr_translation:
+  doc_id: 1
+  title: "[fr] Premier article"
+  body: "[fr] texte de l'article"
+  keywords: "article mots-clés"
+  locale: fr
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+two_translation:
+  doc_id: 2
+  title: Article 2
+  body: article 2 text
+  keywords: My Article keywords 2
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+three_translation:
+  doc_id: 3
+  title: Article 3
+  body: "*article 3* text"
+  keywords: My Article keywords 2
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+four:
+  doc_id: 4
+  title: Article 4
+  body: article1 text
+  keywords: My article keywords 4
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+five:
+  doc_id: 5
+  title: Does not allow comments
+  body: Does not allow comments
+  keywords: My article keywords
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
+
+six:
+  doc_id: 6
+  title: Allows comments
+  body: Allows comments
+  keywords: My article keywords
+  locale: en
+  created_at: 2015-10-30 03:04:05.157655
+  updated_at: 2015-10-30 03:04:05.157655
