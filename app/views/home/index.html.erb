@@ -17,7 +17,7 @@
 <% if @categories.count > 0 && Doc.all.with_translations(I18n.locale).count > 0 && knowledgebase? %>
 <div id="featured-categories" class="row">
 
-  <h2 class="text-center space-h2"><%= t(:browse_topics)%></h2>
+  <h3 class="text-center space-h2"><%= "Browse FAQ and Tutorials"%></h3>
 
   <div id="home-topics" class="col-md-12">
   <% @categories.each do |category| %>

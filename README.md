@@ -17,9 +17,50 @@ can not resolve dependencies......
 
 instead get gemfile and gemfile.lock from current helpy project?
 
+1) bundle install - DONE
+
+development setup
+===================
+Unpack the Helpy assets and setup your database:
+
+RAILS_ENV=development rake assets:precompile
+
+RAILS_ENV=development rake db:setup
+
+then run the onboarding in the browser
+
+Configure inbound and outbound email! => skip for now (mandrill is an option)
+
+get started! button appears.
+
+production set up the database and secrets files:
+======================================
+cp config/database.do.yml config/database.yml
+rake secret
+copy the key to
+
+nano config/secrets.yml
+
+nano config/database.yml
+
+touch /home/deploy/helpy/log/production.log
+
+chmod 0664 /home/deploy/helpy/log/production.log
+
+Unpack the Helpy assets and setup your database:
+
+RAILS_ENV=production rake assets:precompile
+
+RAILS_ENV=production rake db:setup
+
 testing workflow
 ====
 local -> htest-rose github -> server
+
+customize theme flat
+======================
+files are located in the theme folder
+
 
 License
 =======

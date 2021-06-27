@@ -10,12 +10,11 @@
 
 							<%= menu_item t(:your_tickets), tickets_path if user_signed_in? && tickets?%>
 							<%= menu_item t(:knowledgebase), categories_path, class:'kblink' if knowledgebase? %>
-							<%= menu_item t(:community), forums_path if forums? %>
+
 							<%= menu_item t(:ask_a_question), new_topic_path if tickets? || forums? %>
 							<%= menu_divider %>
 							<%= menu_item "#{t(:back_to).titleize} #{AppSettings['settings.parent_company']}", AppSettings['settings.parent_site'], :class => 'hidden-lg hidden-md hidden-sm border-bottom' %>
 
-							<%= menu_item t(:locale), select_locale_path, :class => 'header-login hidden-lg hidden-md hidden-sm' %>
 							<% if user_signed_in? %>
 							<%= menu_item t(:your_profile), edit_user_registration_path, :class => 'header-login hidden-lg hidden-md hidden-sm' %>
 							<%= menu_item t(:logout), destroy_user_session_path, :class => 'header-login hidden-lg hidden-md hidden-sm' %>

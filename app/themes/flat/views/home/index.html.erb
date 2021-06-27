@@ -3,37 +3,32 @@
 <% content_for :home do %>
 <div class="text-center" id="home-search">
   <h1 id="how-help" class="text-center"><%= t('how_can_we_help') %></h1>
+  <h3 class="text-center space-h3"> Enter your question in the form - Get the right tutorial immediately</h3>
+  <br>
   <%= render 'result/search_form' if knowledgebase? %>
 </div>
 <% end %>
 
 <% if knowledgebase? %>
-  <% if @categories.count > 0 && Doc.all.with_translations(I18n.locale).count > 0 %>
-  <div id="featured-categories" class="row">
-    <% @categories.each do |category| %>
-    <div class="col-md-3 col-sm-6 col-xs-6 text-center article-icon">
-      <%= link_to category_path(category), id: "category-#{category.id}" do %>
-        <i class="circle-icon glyphicon glyphicon-<%= category.icon %>"></i><br/>
-        <%= category.name %>
-      <% end %>
-    </div>
-    <% end %>
-  </div>
-  <% end %>
+
 
   <div class="row">
-    <h2 class="text-center space-h2"><%= t(:browse_topics)%></h2>
+    <h1 class="text-center space-h2"><%= "Browse FAQ and Tutorials"%></h1>
+    <h3 class="text-center space-h3"> Look into the most frequently asked questions and answers</h3>
+    <br>
     <% @categories.each do |category| %>
       <% if category.docs.all.with_translations(I18n.locale).count > 0 %>
         <div class="col-md-6 article-block">
+          <i class="circle-icon glyphicon glyphicon-<%= category.icon %>"></i><br/>
           <h5 class="tiny-header"><%= link_to category.name, category_path(category), id: "category-#{category.id}", class:'tiny-header'  %></h5>
+
           <ul class='list-unstyled articles'>
             <%= render partial: 'categories/category', collection: Category.children_of(category).ordered.with_translations(I18n.locale).all %>            
             <% category.docs.with_translations(I18n.locale).ordered.active.includes(tags: :taggings).limit(5).each_with_index do |doc| -%>
               <%= render ("docs/doc"), doc: doc -%>
             <% end -%>
-            <li class="article article-more">
-              <%= link_to "More Documents", category_path(category) if category.docs.ordered.active.count > 5 -%>
+            <li style="text-decoration: underline;" class="article article-more">
+              <%= link_to "More Articles >>", category_path(category) if category.docs.ordered.active.count > 5 -%>
             </li>
           </ul>
         </div>
@@ -65,3 +60,24 @@
     <div class="col-md-1 col-sm-1"></div>
   </div>
 <% end %>
+
+<div class="row" style="background-color: rgb(102, 102, 102) ;color:#ffffff">
+
+    <br>
+    <h1 class="text-center space-h1"> Create a Helpdesk Ticket </h1>
+  <br>
+    <h3 class="text-center space-h3"> Can't find what you need? A support agent will get back to you asap</h3>
+    <br><h5 class="text-center space-h5"> We typically answer as fast as possible - Please allow up to 12 hours as our remote team may be offline or super busy.</h5>
+    <br>
+  <div class="jumbotron">
+  <h3  style="text-decoration: underline;"class="text-center space-h3"><a href="/en/topics/new">Open a Ticket >></a></h3>
+</div>
+  <hr>
+  <h3 class="text-center space-h3" >Thank you for trusting our training providers at:
+   </h3>
+  <h3 class="text-center space-h3" >PMcampus.com, PDUcampus.com, and SCRUMcampus.org
+  </h3>
+  <h5  class="text-center space-h5">
+    We are looking forward to see you join us! We thrive to provide the best customer service experience.
+  </h5>
+</div>
