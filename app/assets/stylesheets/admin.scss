@@ -1,4 +1,4 @@
-@import "codemirror";
+// KM removed @import "codemirror";
 @import "codemirror/themes/monokai";
 @import "summernote";
 
@@ -887,7 +887,7 @@ span.small-labels {
         padding-top: 20%;
     }
     .stats h2 {
-        color: #666;
+        color: teal;
         font-size: 200%;
         margin-bottom: 0;
         margin-top: 0;
@@ -933,7 +933,7 @@ span.small-labels {
         padding-top: 15%;
     }
     .stats h2 {
-        color: #666;
+        color: teal;
         font-size: 300%;
         margin-bottom: 0;
         margin-top: 0;
@@ -972,7 +972,7 @@ span.small-labels {
         padding-top: 10%;
     }
     .stats h2 {
-        color: #666;
+        color: teal;
         font-size: 350%;
         margin-top: 0px;
         margin-bottom: 0;
