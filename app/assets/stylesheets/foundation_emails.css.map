@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,CAAE;EACA,WAAW,EAAE,GAAG;EAChB,KAAK,EC0EW,OAAU;;ADvE5B,MAAO;EACL,MAAM,EAAE,iBAAqB;;AAG/B,MAAO;EACL,KAAK,ECkEW,OAAU;EDjE1B,WAAW,EAAE,IAAI",
+"sources": ["foundation_emails.scss","_settings.scss"],
+"names": [],
+"file": "foundation_emails.css"
+}

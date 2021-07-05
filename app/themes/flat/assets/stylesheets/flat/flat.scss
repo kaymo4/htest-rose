@@ -822,10 +822,10 @@ h1#how-help {
 
 .flat-main-panel {
   background-color: $main-panel-bg;
-  color: $main-panel-font-color;
+  color: #fff;
 
   .breadcrumb a {
-    color: $main-panel-breadcrumb-color;
+    color: darkturquoise;
   }
 
   li.ui-menu div.ui-menu-item a  {
@@ -919,7 +919,7 @@ h5.category-header {
   font-weight: 600;
 
   > a {
-    color: #333;
+    color: purple;
   }
 }
 

@@ -24,7 +24,9 @@
 <% if @results.total_count == 0 %>
   <li class="text-center verticalness">
     <%#= t(:no_results) %><br/>
-    <%= link_to t(:get_help_button, default: "Start a Discussion with Us"), new_topic_path(q: params[:q] ), class: 'btn btn-primary get-help-button' if forums? || tickets? %>
+    <h3><%= link_to t(:get_help_button, default: "Start a Discussion with Us"), new_topic_path(q: params[:q] ), class: 'btn btn-primary get-help-button' if forums? || tickets? %>
+    </h3><h3><%= link_to "Browse the FAQ", categories_path, class: 'btn btn-secondary button' if forums? || tickets? %>
+    </h3>
   </li>
 <% end %>
 </ul>

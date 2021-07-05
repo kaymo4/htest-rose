@@ -669,14 +669,14 @@ ul.dropdown-menu li a.strong {
 }
 
 .navbar-brand {
-	color: black;
+	color: teal;
 	font-family: 'Lobster', sans-serif;
 	padding:0px;
 	font-size:180%;
 	padding-top: 10px;
 
   a {
-    color: #666;
+    color: purple;
   }
 }
 
@@ -740,7 +740,7 @@ h1#how-help {
 }
 
 #home-search {
-	background-color: #feffe9;
+	background-color: teal;
 	// background-color: #ffdf91;
 	padding-bottom: 100px;
 }
@@ -830,7 +830,7 @@ h5.category-header {
   font-weight: 600;
 
   > a {
-    color: #333;
+    color: purple;
   }
 }
 
@@ -975,20 +975,20 @@ table#users {
 //  === FOOTER ===
 
 #get-help-wrapper {
-	background-color: #FFDF91;
+	background-color: turquoise;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 #footer {
-  color: #777;
-  background-color: #222;
+  color: turquoise;
+  background-color: teal;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
 
   a {
-    color: #888;
+    color: purple;
     text-decoration: none;
   }
 
