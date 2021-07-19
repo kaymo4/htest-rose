@@ -5,17 +5,7 @@
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
 
-reset token created by helpy and inserted in database:
-["reset_password_token", "[\"XNMa_ydge92VwymKard_\", \"479bbdc7d0a9a42b3fb645d1b17657a7d2e76286561e3724019a976278807339\"]"]
-
-
-show params sent to form:
-<%= params[:reset_password_token] %>
-
-show the info to be sent hidden 
-<%=  @km_token= @user.reset_password_token %>
- 
-<%= @km_token %>
+<p>Your new password must contain at least 8 characters, including a mix of letters (upper and lower case) and numbers. Thank you! </p>
 
 
   <%= f.hidden_field :reset_password_token, :value => @user.reset_password_token %>
