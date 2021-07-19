@@ -141,9 +141,14 @@ class TopicsController < ApplicationController
       # track event in GA
       tracker('Request', 'Post', 'New Topic')
       tracker('Agent: Unassigned', 'New', @topic.to_param)
-
-      UserMailer.new_user(@user.id, @user.reset_password_token).deliver_later if !user_signed_in?
-    
+      #modified KM to do update code
+      #there was a new encryption done in model not yet bullet proof all over
+            
+      #this is bugged
+      #UserMailer.new_user(@user.id, @user.reset_password_token).deliver_later if !user_signed_in?
+      #replaced by this:
+      @user.send_reset_password_instructions
+      
       if @topic.private?
         redirect_to topic_thanks_path
       else

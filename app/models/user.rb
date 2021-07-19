@@ -78,6 +78,17 @@ class User < ActiveRecord::Base
 
   validates :name, presence: true
   validates :email, presence: true
+  
+  validate :password_complexity
+  
+  #modified KM may be an issue when resetting password
+  def password_complexity
+    if password.present?
+       if !password.match(/^(?=.*[a-z])(?=.*[A-Z])/) 
+         errors.add :password, "Password complexity requirement not met"
+       end
+    end
+  end
 
   include Gravtastic
   mount_uploader :profile_image, ProfileImageUploader
