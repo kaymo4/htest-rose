@@ -21,7 +21,7 @@ gem 'sass-rails'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'sprockets-rails', '>=2.1.4'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'autoprefixer-rails'
+gem 'autoprefixer-rails', '10.2.5.1'
 gem 'twitter-bootstrap-rails'
 
 # Bootstrap/UI Gems
