@@ -33,33 +33,20 @@ Configure inbound and outbound email! => skip for now (mandrill is an option)
 
 get started! button appears.
 
-production set up the database and secrets files:
-======================================
-cp config/database.do.yml config/database.yml
-rake secret
-copy the key to
 
-nano config/secrets.yml
-
-nano config/database.yml
-
-touch /home/deploy/helpy/log/production.log
-
-chmod 0664 /home/deploy/helpy/log/production.log
-
-Unpack the Helpy assets and setup your database:
-
-RAILS_ENV=production rake assets:precompile
-
-RAILS_ENV=production rake db:setup
 
 testing workflow
 ====
 local -> htest-rose github -> server
 
-customize theme flat
+customize theme singular
 ======================
 files are located in the theme folder
+
+compiling css local machine
+======
+important to keep all.css.map pointing on the correct theme and add files as needed
+modified km - compiling with ruby mine tool file watcher
 
 
 License

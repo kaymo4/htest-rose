@@ -1,0 +1,1081 @@
+/* line 7, app/assets/stylesheets/admin.scss */
+body {
+  background-color: #f4f4f4;
+}
+
+/* line 11, app/assets/stylesheets/admin.scss */
+h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+/* line 17, app/assets/stylesheets/admin.scss */
+h2 {
+  margin-top: 0px;
+}
+
+/* line 21, app/assets/stylesheets/admin.scss */
+h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* line 26, app/assets/stylesheets/admin.scss */
+table {
+  margin-top: 20px;
+}
+
+/* line 30, app/assets/stylesheets/admin.scss */
+td > img {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* line 35, app/assets/stylesheets/admin.scss */
+.status {
+  font-size: 120%;
+}
+
+/* line 39, app/assets/stylesheets/admin.scss */
+.first-post {
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+/* line 46, app/assets/stylesheets/admin.scss */
+ul.settings-menu {
+  margin-top: 40px;
+}
+
+/* line 50, app/assets/stylesheets/admin.scss */
+.settings-menu-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 55, app/assets/stylesheets/admin.scss */
+.active-settings-link {
+  font-weight: bold;
+}
+
+/* line 59, app/assets/stylesheets/admin.scss */
+#ticket-nav,
+#user-nav,
+#admin-left-nav {
+  height: 100%;
+}
+
+/* line 65, app/assets/stylesheets/admin.scss */
+#admin-left-nav.open {
+  padding-top: 30px;
+  opacity: 0.97;
+  background-color: #f4f4f4;
+}
+
+/* line 71, app/assets/stylesheets/admin.scss */
+.submit-section,
+.nav-new-button {
+  margin-left: 10px;
+}
+
+/* line 75, app/assets/stylesheets/admin.scss */
+.submit-section a,
+.nav-new-button a {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 82, app/assets/stylesheets/admin.scss */
+.show-ticket-menu {
+  margin-top: -10px;
+  margin-left: -8px;
+}
+
+/* line 86, app/assets/stylesheets/admin.scss */
+.close-ticket-menu {
+  margin-right: -10px;
+  margin-top: -4px;
+}
+
+/* line 91, app/assets/stylesheets/admin.scss */
+.nav-items,
+.user-nav-items {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 96, app/assets/stylesheets/admin.scss */
+.nav-items .nav-item,
+.user-nav-items .nav-item {
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+/* line 100, app/assets/stylesheets/admin.scss */
+.nav-items .nav-item a,
+.user-nav-items .nav-item a {
+  display: block;
+}
+
+/* line 104, app/assets/stylesheets/admin.scss */
+.nav-items .nav-over,
+.user-nav-items .nav-over {
+  background-color: #efefef;
+}
+
+/* line 109, app/assets/stylesheets/admin.scss */
+.left-nav-header {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 115, app/assets/stylesheets/admin.scss */
+.nav-header,
+.settings-nav-header {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 122, app/assets/stylesheets/admin.scss */
+.nav-active {
+  font-weight: bold;
+}
+
+/* line 126, app/assets/stylesheets/admin.scss */
+.left-dropdown {
+  position: absolute;
+  z-index: 1000;
+  width: 50%;
+  height: 50%;
+  border: 1px solid #ddd;
+}
+
+/* line 135, app/assets/stylesheets/admin.scss */
+.flash-wrapper {
+  position: fixed;
+  width: 50%;
+  margin-left: 25%;
+  z-index: 999999999;
+}
+
+/* line 141, app/assets/stylesheets/admin.scss */
+.flash-wrapper div {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* line 148, app/assets/stylesheets/admin.scss */
+.main-panel {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.75);
+}
+
+/* line 162, app/assets/stylesheets/admin.scss */
+.col-md-12.main-panel {
+  margin-left: 10px;
+}
+
+/* line 166, app/assets/stylesheets/admin.scss */
+#body-wrapper {
+  position: relative;
+}
+
+/* line 170, app/assets/stylesheets/admin.scss */
+#main-content {
+  margin-top: 40px;
+  padding-right: 20px;
+  background-color: transparent;
+}
+
+/* line 176, app/assets/stylesheets/admin.scss */
+#upper-wrapper {
+  background-color: #222;
+  margin-bottom: 0;
+}
+
+/* line 179, app/assets/stylesheets/admin.scss */
+#upper-wrapper > div {
+  padding-top: 0;
+}
+
+/* line 184, app/assets/stylesheets/admin.scss */
+#user-info,
+#left-col-user-info {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-right: 30px;
+}
+
+/* line 191, app/assets/stylesheets/admin.scss */
+#user-info-info span.bip-placeholder {
+  text-transform: lowercase;
+  color: #888;
+}
+
+/* line 196, app/assets/stylesheets/admin.scss */
+.right-border {
+  border-right: 1px solid #f4f4f4;
+}
+
+/* line 200, app/assets/stylesheets/admin.scss */
+.user-info {
+  padding-top: 20px;
+}
+
+/* line 204, app/assets/stylesheets/admin.scss */
+#pipeline-wrapper {
+  background-color: #f4f4f4;
+  height: 160px;
+}
+
+/* line 209, app/assets/stylesheets/admin.scss */
+#user-info-image {
+  padding-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+}
+
+/* line 216, app/assets/stylesheets/admin.scss */
+#user-info-info h4,
+#user-info-info span,
+#user-info-info .tiny-header {
+  color: #333;
+}
+
+/* line 222, app/assets/stylesheets/admin.scss */
+#ticket-info {
+  margin-bottom: 10px;
+}
+
+/* line 226, app/assets/stylesheets/admin.scss */
+#admin-stats {
+  height: 100px;
+}
+
+/* line 235, app/assets/stylesheets/admin.scss */
+#topic-options {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* line 240, app/assets/stylesheets/admin.scss */
+.label-light,
+.btn-light {
+  background-color: #aaaaaa;
+}
+
+/* line 245, app/assets/stylesheets/admin.scss */
+#user-info-horizontal {
+  padding-top: 30px;
+}
+
+/* line 250, app/assets/stylesheets/admin.scss */
+.edit-topic-name input[type="text"] {
+  width: 80%;
+}
+
+/* line 253, app/assets/stylesheets/admin.scss */
+.edit-topic-name:hover {
+  cursor: pointer;
+}
+
+/* line 256, app/assets/stylesheets/admin.scss */
+.edit-topic-name input[type="submit"] {
+  margin-left: 4px;
+  height: 37px;
+  vertical-align: top;
+}
+
+/* line 261, app/assets/stylesheets/admin.scss */
+.edit-topic-name input[type="button"] {
+  margin-left: 4px;
+  height: 37px;
+  vertical-align: top;
+}
+
+/* line 268, app/assets/stylesheets/admin.scss */
+.topic-search-container {
+  background-color: #ddd;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+/* line 275, app/assets/stylesheets/admin.scss */
+.kind-note {
+  background: #D9EDF7;
+  color: #31708F;
+  border: 1px solid #BCE8F1;
+  border-radius: 3px;
+  display: none;
+}
+
+/* line 282, app/assets/stylesheets/admin.scss */
+.kind-note p,
+.kind-note span {
+  color: #31708F;
+}
+
+/* line 288, app/assets/stylesheets/admin.scss */
+.admin-header {
+  margin-bottom: 30px;
+}
+
+/* line 292, app/assets/stylesheets/admin.scss */
+.topic-tag-form .selectize-control {
+  margin-top: 6px;
+}
+
+/* line 296, app/assets/stylesheets/admin.scss */
+.selectize-input > .item {
+  min-height: 20px;
+}
+
+/* line 301, app/assets/stylesheets/admin.scss */
+.topic-number-name .ticket-ellipsis {
+  font-size: 50%;
+}
+
+/* line 308, app/assets/stylesheets/admin.scss */
+ul.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 316, app/assets/stylesheets/admin.scss */
+.white-bg {
+  background-color: transparent;
+}
+
+/* line 320, app/assets/stylesheets/admin.scss */
+.admin-avatar img {
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+/* line 325, app/assets/stylesheets/admin.scss */
+.channel-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 329, app/assets/stylesheets/admin.scss */
+.channel-wrapper label {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+/* line 335, app/assets/stylesheets/admin.scss */
+img.user-thumbnail {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 340, app/assets/stylesheets/admin.scss */
+div.left-col-dropdown {
+  width: 100%;
+}
+
+/* line 343, app/assets/stylesheets/admin.scss */
+div.left-col-dropdown > .btn-default {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 349, app/assets/stylesheets/admin.scss */
+ul.dropdown-menu {
+  width: 250px;
+}
+
+/* line 353, app/assets/stylesheets/admin.scss */
+#user-tickets ul li {
+  margin-bottom: 7px;
+  color: #666;
+}
+
+/* line 358, app/assets/stylesheets/admin.scss */
+.edit-user {
+  margin-right: 4px;
+}
+
+/* line 362, app/assets/stylesheets/admin.scss */
+.user-section {
+  margin-bottom: 40px;
+}
+
+/* line 366, app/assets/stylesheets/admin.scss */
+.navbar.navbar-default {
+  background-color: #222;
+}
+
+/* line 370, app/assets/stylesheets/admin.scss */
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+/* line 376, app/assets/stylesheets/admin.scss */
+.navbar-brand {
+  padding-top: 15px;
+  margin-right: 40px;
+}
+
+/* line 381, app/assets/stylesheets/admin.scss */
+.navbar-right {
+  margin-right: -28px;
+  margin-top: 10px;
+}
+
+/* line 387, app/assets/stylesheets/admin.scss */
+.mailbox {
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+/* line 392, app/assets/stylesheets/admin.scss */
+.ticket-control {
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+}
+
+/* line 398, app/assets/stylesheets/admin.scss */
+#article-editor {
+  border: 1px solid #eee;
+}
+
+/* line 402, app/assets/stylesheets/admin.scss */
+#editor {
+  min-height: 500px;
+}
+
+/* line 406, app/assets/stylesheets/admin.scss */
+#toolbar {
+  border-bottom: 1px solid #eee;
+}
+
+/* line 410, app/assets/stylesheets/admin.scss */
+.no-tickets {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+/* line 414, app/assets/stylesheets/admin.scss */
+.no-tickets span {
+  color: #ccc;
+}
+
+/* line 417, app/assets/stylesheets/admin.scss */
+.no-tickets span i {
+  font-size: 48px;
+}
+
+/* line 423, app/assets/stylesheets/admin.scss */
+.topic-checkbox {
+  margin-top: 13px !important;
+}
+
+/* line 428, app/assets/stylesheets/admin.scss */
+.checkbox-section {
+  padding-left: 15px;
+}
+
+/* line 432, app/assets/stylesheets/admin.scss */
+.topic span.label-count {
+  margin-top: -11px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* line 438, app/assets/stylesheets/admin.scss */
+.settings-grid {
+  margin-top: 40px;
+}
+
+/* line 442, app/assets/stylesheets/admin.scss */
+.settings-section {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+/* line 446, app/assets/stylesheets/admin.scss */
+.settings-section h2 {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/* line 452, app/assets/stylesheets/admin.scss */
+.settings-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+/* line 457, app/assets/stylesheets/admin.scss */
+.settings-menu-icon {
+  margin-right: 5px;
+  font-size: 110%;
+  color: #333;
+}
+
+/* line 465, app/assets/stylesheets/admin.scss */
+.theme label {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+/* line 471, app/assets/stylesheets/admin.scss */
+.theme img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 478, app/assets/stylesheets/admin.scss */
+#post-images {
+  margin-top: 30px;
+}
+
+/* line 481, app/assets/stylesheets/admin.scss */
+#post-images ul li.image img {
+  margin-top: -20px;
+}
+
+/* line 485, app/assets/stylesheets/admin.scss */
+#post-images ul li.raw {
+  border: 1px solid #ddd;
+  width: 125px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+/* line 492, app/assets/stylesheets/admin.scss */
+#post-images ul li.raw i {
+  font-size: 36px;
+  color: #ccc;
+}
+
+/* line 500, app/assets/stylesheets/admin.scss */
+.color-sample {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* line 508, app/assets/stylesheets/admin.scss */
+.new-tag {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 513, app/assets/stylesheets/admin.scss */
+.new-tag input {
+  width: 90%;
+}
+
+/* line 518, app/assets/stylesheets/admin.scss */
+.settings-panel .checkbox {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 523, app/assets/stylesheets/admin.scss */
+.settings-panel .checkbox label {
+  padding-left: 0;
+}
+
+/* line 528, app/assets/stylesheets/admin.scss */
+.bootstrap-switch {
+  float: right;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+
+/* line 534, app/assets/stylesheets/admin.scss */
+.bootstrap-switch-label {
+  border-radius: 50px;
+}
+
+/* line 538, app/assets/stylesheets/admin.scss */
+.bootstrap-switch-on {
+  background-color: #528BC5;
+  border: 1px solid #528BC5;
+}
+
+/* line 543, app/assets/stylesheets/admin.scss */
+.bootstrap-switch-off {
+  background-color: #eee;
+}
+
+/* line 547, app/assets/stylesheets/admin.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 551, app/assets/stylesheets/admin.scss */
+.settings-subsection {
+  margin-bottom: 40px;
+}
+
+/* line 555, app/assets/stylesheets/admin.scss */
+.subitem {
+  margin-left: 3%;
+  width: 97%;
+}
+
+/* line 560, app/assets/stylesheets/admin.scss */
+.btn.post-dropdown {
+  padding: 6px 0px;
+}
+
+/* line 564, app/assets/stylesheets/admin.scss */
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
+/* line 569, app/assets/stylesheets/admin.scss */
+.post-cc-style {
+  color: #999;
+}
+
+/* line 573, app/assets/stylesheets/admin.scss */
+.content-visibility-options label {
+  margin: 0px 5px 0px 3px;
+  vertical-align: text-bottom;
+}
+
+/* line 578, app/assets/stylesheets/admin.scss */
+.inactive,
+.grayout {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  -moz-opacity: 0.50;
+}
+
+/* line 585, app/assets/stylesheets/admin.scss */
+span.small-labels {
+  font-size: 60%;
+}
+
+/* line 587, app/assets/stylesheets/admin.scss */
+span.small-labels span.label {
+  vertical-align: super;
+}
+
+/* line 720, app/assets/stylesheets/admin.scss */
+.shortcut-row {
+  height: 50px;
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 725, app/assets/stylesheets/admin.scss */
+.shortcut-row .key {
+  border: 1px #ddd solid;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* line 732, app/assets/stylesheets/admin.scss */
+.keyboard-shortcuts h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 736, app/assets/stylesheets/admin.scss */
+.keyboard-shortcuts h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 744, app/assets/stylesheets/admin.scss */
+.team-members {
+  margin-top: 40px;
+}
+
+/* line 748, app/assets/stylesheets/admin.scss */
+.agent {
+  margin-bottom: 50px;
+}
+
+/* line 752, app/assets/stylesheets/admin.scss */
+.agent .agent-stat {
+  margin-bottom: 25px;
+}
+
+/* line 755, app/assets/stylesheets/admin.scss */
+.agent .agent-id {
+  margin-bottom: 35px;
+}
+
+/* line 758, app/assets/stylesheets/admin.scss */
+.agent .add-team-member {
+  margin-top: 200px;
+}
+
+/* line 761, app/assets/stylesheets/admin.scss */
+.agent .add-team-member i {
+  font-size: 48px;
+  color: #ccc;
+}
+
+/* line 769, app/assets/stylesheets/admin.scss */
+.insights-blurb {
+  margin-bottom: 25px;
+}
+
+/* line 774, app/assets/stylesheets/admin.scss */
+.report-link {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* line 780, app/assets/stylesheets/admin.scss */
+.big-stats {
+  margin-top: 0;
+}
+
+/* line 786, app/assets/stylesheets/admin.scss */
+.big-stats div h2 {
+  font-size: 48px;
+}
+
+/* line 790, app/assets/stylesheets/admin.scss */
+.big-stats div span {
+  margin-bottom: 40px;
+}
+
+/* line 797, app/assets/stylesheets/admin.scss */
+#chart-1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  /* line 802, app/assets/stylesheets/admin.scss */
+  h1 {
+    font-size: 150%;
+  }
+  /* line 805, app/assets/stylesheets/admin.scss */
+  h1#how-help {
+    font-size: 190%;
+  }
+  /* line 808, app/assets/stylesheets/admin.scss */
+  h2 {
+    font-size: 150%;
+    margin-top: 25px;
+  }
+  /* line 812, app/assets/stylesheets/admin.scss */
+  .big-stats div h2 {
+    font-size: 24px;
+  }
+  /* line 815, app/assets/stylesheets/admin.scss */
+  .reports-nav {
+    margin-bottom: 40px;
+  }
+  /* line 818, app/assets/stylesheets/admin.scss */
+  .report-header {
+    margin-bottom: 0;
+  }
+  /* line 821, app/assets/stylesheets/admin.scss */
+  .checkbox-col {
+    width: 10px;
+  }
+  /* line 824, app/assets/stylesheets/admin.scss */
+  #main-content {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+  /* line 830, app/assets/stylesheets/admin.scss */
+  #status-mobile-dropdown {
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  /* line 835, app/assets/stylesheets/admin.scss */
+  .post-menu {
+    margin-top: 0px;
+  }
+  /* line 838, app/assets/stylesheets/admin.scss */
+  .settings-grid-block {
+    margin-bottom: 10px;
+  }
+  /* line 841, app/assets/stylesheets/admin.scss */
+  .settings-menu-icon {
+    font-size: 20px;
+  }
+  /* line 845, app/assets/stylesheets/admin.scss */
+  .agent .add-team-member {
+    margin-top: 20px;
+  }
+  /* line 850, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="text"] {
+    width: 60%;
+  }
+  /* line 853, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="submit"] {
+    height: 30px;
+  }
+  /* line 856, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="button"] {
+    height: 30px;
+  }
+  /* line 860, app/assets/stylesheets/admin.scss */
+  #header-wrapper > nav > div > ul > li > a {
+    text-align: left;
+  }
+  /* line 863, app/assets/stylesheets/admin.scss */
+  #header-wrapper > nav > div > ul > li > a span {
+    display: none;
+  }
+  /* line 866, app/assets/stylesheets/admin.scss */
+  #header-wrapper > nav > div > ul > li > a br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 874, app/assets/stylesheets/admin.scss */
+  h1 {
+    font-size: 190%;
+  }
+  /* line 878, app/assets/stylesheets/admin.scss */
+  h2 {
+    margin-top: 45px;
+  }
+  /* line 881, app/assets/stylesheets/admin.scss */
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  /* line 886, app/assets/stylesheets/admin.scss */
+  .stats {
+    padding-top: 20%;
+  }
+  /* line 889, app/assets/stylesheets/admin.scss */
+  .stats h2 {
+    color: teal;
+    font-size: 200%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  /* line 895, app/assets/stylesheets/admin.scss */
+  .big-stats div h2 {
+    font-size: 28px;
+  }
+  /* line 898, app/assets/stylesheets/admin.scss */
+  .report-header {
+    margin-bottom: 0;
+  }
+  /* line 901, app/assets/stylesheets/admin.scss */
+  #pipeline-wrapper {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  /* line 905, app/assets/stylesheets/admin.scss */
+  .settings-grid-block {
+    min-height: 70px;
+    margin-bottom: 10px;
+  }
+  /* line 909, app/assets/stylesheets/admin.scss */
+  .settings-grid-row {
+    margin-bottom: 20px;
+  }
+  /* line 913, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 920, app/assets/stylesheets/admin.scss */
+  h1 {
+    font-size: 200%;
+  }
+  /* line 923, app/assets/stylesheets/admin.scss */
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  /* line 929, app/assets/stylesheets/admin.scss */
+  .big-stats {
+    margin-top: -40px;
+  }
+  /* line 932, app/assets/stylesheets/admin.scss */
+  .stats {
+    padding-top: 15%;
+  }
+  /* line 935, app/assets/stylesheets/admin.scss */
+  .stats h2 {
+    color: teal;
+    font-size: 300%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  /* line 941, app/assets/stylesheets/admin.scss */
+  .big-stats div h2 {
+    font-size: 48px;
+  }
+  /* line 944, app/assets/stylesheets/admin.scss */
+  .report-header {
+    padding-bottom: 40px;
+  }
+  /* line 947, app/assets/stylesheets/admin.scss */
+  #pipeline-wrapper {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  /* line 952, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 959, app/assets/stylesheets/admin.scss */
+  h1 {
+    font-size: 220%;
+  }
+  /* line 962, app/assets/stylesheets/admin.scss */
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  /* line 968, app/assets/stylesheets/admin.scss */
+  .big-stats {
+    margin-top: -40px;
+  }
+  /* line 971, app/assets/stylesheets/admin.scss */
+  .stats {
+    padding-top: 10%;
+  }
+  /* line 974, app/assets/stylesheets/admin.scss */
+  .stats h2 {
+    color: teal;
+    font-size: 350%;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  /* line 980, app/assets/stylesheets/admin.scss */
+  .big-stats div h2 {
+    font-size: 48px;
+  }
+  /* line 983, app/assets/stylesheets/admin.scss */
+  .report-header {
+    padding-bottom: 40px;
+  }
+  /* line 986, app/assets/stylesheets/admin.scss */
+  #pipeline-wrapper {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  /* line 990, app/assets/stylesheets/admin.scss */
+  .settings-grid-row {
+    margin-bottom: 20px;
+  }
+  /* line 994, app/assets/stylesheets/admin.scss */
+  .edit-topic-name input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media print {
+  /* line 1001, app/assets/stylesheets/admin.scss */
+  .add-team-member {
+    display: none;
+  }
+  /* line 1005, app/assets/stylesheets/admin.scss */
+  .admin-options {
+    display: none;
+  }
+  /* line 1009, app/assets/stylesheets/admin.scss */
+  .btn-group {
+    display: none;
+  }
+  /* line 1013, app/assets/stylesheets/admin.scss */
+  .label {
+    display: none;
+  }
+}
+
+/* line 1018, app/assets/stylesheets/admin.scss */
+.selectize-control.form-control {
+  border: 0;
+}
+
+/* line 1022, app/assets/stylesheets/admin.scss */
+.overflow-visible {
+  overflow: visible;
+}
+
+/* line 1026, app/assets/stylesheets/admin.scss */
+.dropdown-form {
+  padding-left: 20px;
+}
+
+/* line 1030, app/assets/stylesheets/admin.scss */
+.datepicker.datepicker-dropdown {
+  min-width: 0;
+}
+
+/* line 1033, app/assets/stylesheets/admin.scss */
+.datepicker.datepicker-dropdown tr {
+  height: 0;
+}
+
+/* line 1038, app/assets/stylesheets/admin.scss */
+.search-results {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+/* line 1041, app/assets/stylesheets/admin.scss */
+.search-results .change-user-result {
+  padding: 5px;
+  min-height: 40px;
+  position: relative;
+}
+
+/* line 1045, app/assets/stylesheets/admin.scss */
+.search-results .change-user-result:hover, .search-results .change-user-result:focus {
+  background-color: #ccc;
+}
+
+/* line 1049, app/assets/stylesheets/admin.scss */
+.search-results .change-user-result .centering {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+
+/* line 1060, app/assets/stylesheets/admin.scss */
+.integration-item {
+  padding: 20px;
+  border: 1px solid #eee;
+  margin-bottom: 40px;
+}

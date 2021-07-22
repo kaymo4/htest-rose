@@ -1,21 +1,21 @@
 // KM removed @import "codemirror";
-@import "codemirror/themes/monokai";
-@import "summernote";
+// KM removed @import "codemirror/themes/monokai";
+// KM removed @import "summernote";
 
 // === ADMIN GLOBAL OVERRIDES ===
 
 body {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 h1{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 h2 {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 h3 {
@@ -24,32 +24,32 @@ h3 {
 }
 
 table {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 td > img {
-    padding-right: 20px;
-    padding-bottom: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 .status {
-    font-size: 120%;
+  font-size: 120%;
 }
 
 .first-post {
-    background-color: #eee;
-    margin-bottom: 20px;
+  background-color: #eee;
+  margin-bottom: 20px;
 }
 
 // === LEFT NAV ===
 
 ul.settings-menu {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .settings-menu-item {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .active-settings-link {
@@ -175,7 +175,7 @@ ul.settings-menu {
 
 #upper-wrapper {
   background-color: #222;
-	margin-bottom: 0;
+  margin-bottom: 0;
   > div {
     padding-top: 0;
   }
@@ -183,9 +183,9 @@ ul.settings-menu {
 
 #user-info,
 #left-col-user-info {
-    margin-top: 30px;
-    margin-bottom: 0;
-    padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-right: 30px;
 }
 
 #user-info-info span.bip-placeholder {
@@ -202,39 +202,39 @@ ul.settings-menu {
 }
 
 #pipeline-wrapper {
-    background-color: #f4f4f4;
-    height: 160px;
+  background-color: #f4f4f4;
+  height: 160px;
 }
 
 #user-info-image {
-    padding-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 30px;
+  padding-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
 }
 
 #user-info-info h4,
 #user-info-info span,
 #user-info-info .tiny-header {
-    color: #333;
+  color: #333;
 }
 
 #ticket-info {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #admin-stats {
-    height:  100px;
+  height:  100px;
 }
 
 
 #tickets {
-    // margin-top: 30px;
+  // margin-top: 30px;
 }
 
 #topic-options {
-    margin-bottom: 30px;
-    margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .label-light,
@@ -243,33 +243,33 @@ ul.settings-menu {
 }
 
 #user-info-horizontal {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .edit-topic-name {
-    input[type="text"] {
-        width: 80%;
-    }
-    &:hover {
-        cursor: pointer;
-    }
-    input[type="submit"] {
-        margin-left: 4px;
-        height: 37px;
-        vertical-align: top;
-    }
-    input[type="button"] {
-        margin-left: 4px;
-        height: 37px;
-        vertical-align: top;
-    }
+  input[type="text"] {
+    width: 80%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  input[type="submit"] {
+    margin-left: 4px;
+    height: 37px;
+    vertical-align: top;
+  }
+  input[type="button"] {
+    margin-left: 4px;
+    height: 37px;
+    vertical-align: top;
+  }
 }
 
 .topic-search-container {
-	background-color: #ddd;
-	height: 50px;
-	padding-top: 10px;
-	padding-bottom: 0;
+  background-color: #ddd;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 .kind-note {
@@ -306,15 +306,15 @@ ul.settings-menu {
 // === ADMIN STYLES ===
 
 ul.breadcrumb {
-	background-color: transparent;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-bottom: 0px;
+  background-color: transparent;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
 }
 
 
 .white-bg {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .admin-avatar img {
@@ -323,18 +323,18 @@ ul.breadcrumb {
 }
 
 .channel-wrapper {
-	margin-top: 10px;
-	margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-	label {
-		margin-top: 3px;
-		margin-right: 10px;
-	}
+  label {
+    margin-top: 3px;
+    margin-right: 10px;
+  }
 }
 
 img.user-thumbnail {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 div.left-col-dropdown {
@@ -351,78 +351,78 @@ ul.dropdown-menu {
 }
 
 #user-tickets ul li {
-    margin-bottom: 7px;
-    color: #666;
+  margin-bottom: 7px;
+  color: #666;
 }
 
 .edit-user {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .user-section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .navbar.navbar-default {
-    background-color: #222;
+  background-color: #222;
 }
 
 .navbar-default .navbar-brand {
-    color: white;
-    font-weight: normal;
-    margin-top: 10px;
+  color: white;
+  font-weight: normal;
+  margin-top: 10px;
 }
 
 .navbar-brand {
-    padding-top: 15px;
-    margin-right: 40px;
+  padding-top: 15px;
+  margin-right: 40px;
 }
 
 .navbar-right {
-    margin-right: -28px;
-    margin-top: 10px;
+  margin-right: -28px;
+  margin-top: 10px;
 }
 
 
 .mailbox {
-    padding-right: 10px;
-    padding-bottom: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
 }
 
 .ticket-control {
-	text-transform: uppercase;
-	border: 0;
-	background-color: transparent;
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
 }
 
 #article-editor {
-    border: 1px solid #eee;
+  border: 1px solid #eee;
 }
 
 #editor {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 #toolbar {
-    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .no-tickets {
-    margin-top: 20%;
-    margin-bottom: 20%;
+  margin-top: 20%;
+  margin-bottom: 20%;
 
-    span {
-        color: #ccc;
+  span {
+    color: #ccc;
 
-        i {
-            font-size: 48px;
-        }
+    i {
+      font-size: 48px;
     }
+  }
 }
 
 .topic-checkbox {
-    // scss-lint:disable ImportantRule
-    margin-top: 13px !important;
+  // scss-lint:disable ImportantRule
+  margin-top: 13px !important;
 }
 
 .checkbox-section {
@@ -430,13 +430,13 @@ ul.dropdown-menu {
 }
 
 .topic span.label-count {
-    margin-top: -11px;
-    margin-right: 10px;
-    margin-left:10px;
+  margin-top: -11px;
+  margin-right: 10px;
+  margin-left:10px;
 }
 
 .settings-grid {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .settings-section {
@@ -446,55 +446,55 @@ ul.dropdown-menu {
   h2 {
     margin-bottom: 50px;
     margin-top: 30px;
-    }
+  }
 }
 
 .settings-icon {
-    font-size: 20px;
-    color: #333;
+  font-size: 20px;
+  color: #333;
 }
 
 .settings-menu-icon {
-    margin-right: 5px;
-    font-size: 110%;
-    color: #333;
+  margin-right: 5px;
+  font-size: 110%;
+  color: #333;
 }
 
 .theme {
 
-    label {
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
-    }
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
 
-    img {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
 }
 
 #post-images {
-    margin-top: 30px;
+  margin-top: 30px;
 
-    ul li.image img {
-        margin-top: -20px;
+  ul li.image img {
+    margin-top: -20px;
+  }
+
+  ul li.raw {
+    border: 1px solid #ddd;
+    width: 125px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+
+    i {
+      font-size: 36px;
+      color: #ccc;
     }
 
-    ul li.raw {
-        border: 1px solid #ddd;
-        width: 125px;
-        padding-top: 45px;
-        padding-bottom: 45px;
-        text-align: center;
-
-        i {
-            font-size: 36px;
-            color: #ccc;
-        }
-
-    }
+  }
 }
 
 .color-sample {
@@ -506,29 +506,29 @@ ul.dropdown-menu {
 }
 
 .new-tag {
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    input {
-        width: 90%;
-    }
+  input {
+    width: 90%;
+  }
 }
 
 .settings-panel .checkbox {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
 
-    label {
-        padding-left: 0;
-    }
+  label {
+    padding-left: 0;
+  }
 }
 
 .bootstrap-switch {
-    float: right;
-    margin-left: 20px;
-    border-radius: 50px;
+  float: right;
+  margin-left: 20px;
+  border-radius: 50px;
 }
 
 .bootstrap-switch-label {
@@ -545,29 +545,29 @@ ul.dropdown-menu {
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .settings-subsection {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .subitem {
-    margin-left: 3%;
-    width: 97%;
+  margin-left: 3%;
+  width: 97%;
 }
 
 .btn.post-dropdown {
-    padding: 6px 0px;
+  padding: 6px 0px;
 }
 
 .btn-group.open .dropdown-toggle {
-    -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .post-cc-style {
-    color: #999;
+  color: #999;
 }
 
 .content-visibility-options label {
@@ -718,51 +718,51 @@ span.small-labels {
 // === KEYBOARD SHORTCUTS ===
 
 .shortcut-row {
-	height: 50px;
-	padding-top: 15px;
-	border-bottom: 1px solid #eee;
+  height: 50px;
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
 
-	.key{
-		border: 1px #ddd solid;
-		padding: 5px;
-		font-weight: bold;
-	}
+  .key{
+    border: 1px #ddd solid;
+    padding: 5px;
+    font-weight: bold;
+  }
 }
 .keyboard-shortcuts {
-	h3 {
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
-	h4 {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 // === TEAM INSIGHTS ===
 
 .team-members {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .agent {
 
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
-    .agent-stat {
-        margin-bottom: 25px;
-    }
-    .agent-id {
-        margin-bottom: 35px;
-    }
-    .add-team-member {
-        margin-top: 200px;
+  .agent-stat {
+    margin-bottom: 25px;
+  }
+  .agent-id {
+    margin-bottom: 35px;
+  }
+  .add-team-member {
+    margin-top: 200px;
 
-        i {
-            font-size: 48px;
-            color: #ccc;
-        }
+    i {
+      font-size: 48px;
+      color: #ccc;
     }
+  }
 
 }
 
@@ -799,202 +799,202 @@ span.small-labels {
   margin-bottom: 40px;
 }
 @media(max-width:767px){
-    h1 {
-        font-size: 150%;
-    }
-    h1#how-help {
-        font-size: 190%;
-    }
-    h2 {
-        font-size: 150%;
-        margin-top: 25px;
-    }
-    .big-stats div h2 {
-      font-size: 24px;
-    }
-    .reports-nav {
-      margin-bottom: 40px;
-    }
-    .report-header {
-      margin-bottom: 0;
-    }
-    .checkbox-col {
-        width: 10px;
-    }
-    #main-content {
-      margin-top: 10px;
-      padding-right: 10px;
-      padding-left: 20px;
-    }
+  h1 {
+    font-size: 150%;
+  }
+  h1#how-help {
+    font-size: 190%;
+  }
+  h2 {
+    font-size: 150%;
+    margin-top: 25px;
+  }
+  .big-stats div h2 {
+    font-size: 24px;
+  }
+  .reports-nav {
+    margin-bottom: 40px;
+  }
+  .report-header {
+    margin-bottom: 0;
+  }
+  .checkbox-col {
+    width: 10px;
+  }
+  #main-content {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
 
-    #status-mobile-dropdown {
-        margin-left: 5px;
-        margin-top: -5px;
+  #status-mobile-dropdown {
+    margin-left: 5px;
+    margin-top: -5px;
 
+  }
+  .post-menu {
+    margin-top: 0px;
+  }
+  .settings-grid-block {
+    margin-bottom: 10px;
+  }
+  .settings-menu-icon {
+    font-size: 20px;
+  }
+  .agent {
+    .add-team-member {
+      margin-top: 20px;
     }
-    .post-menu {
-        margin-top: 0px;
+  }
+  .edit-topic-name {
+    input[type="text"] {
+      width: 60%;
     }
-    .settings-grid-block {
-        margin-bottom: 10px;
+    input[type="submit"] {
+      height: 30px;
     }
-    .settings-menu-icon {
-        font-size: 20px;
+    input[type="button"] {
+      height: 30px;
     }
-    .agent {
-        .add-team-member {
-            margin-top: 20px;
-        }
-    }
-    .edit-topic-name {
-        input[type="text"] {
-            width: 60%;
-        }
-        input[type="submit"] {
-            height: 30px;
-        }
-        input[type="button"] {
-            height: 30px;
-        }
-    }
-    #header-wrapper > nav > div > ul > li > a {
-      text-align: left;
+  }
+  #header-wrapper > nav > div > ul > li > a {
+    text-align: left;
 
-      span {
-        display: none;
-      }
-      br {
-        display: none;
-      }
+    span {
+      display: none;
     }
+    br {
+      display: none;
+    }
+  }
 }
 
 @media(min-width:768px){
 
-    h1 {
-        font-size: 190%;
-    }
+  h1 {
+    font-size: 190%;
+  }
 
-    h2 {
-        margin-top: 45px;
+  h2 {
+    margin-top: 45px;
+  }
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .stats {
+    padding-top: 20%;
+  }
+  .stats h2 {
+    color: teal;
+    font-size: 200%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .big-stats div h2 {
+    font-size: 28px;
+  }
+  .report-header {
+    margin-bottom: 0;
+  }
+  #pipeline-wrapper {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  .settings-grid-block {
+    min-height: 70px;
+    margin-bottom: 10px;
+  }
+  .settings-grid-row {
+    margin-bottom: 20px;
+  }
+  .edit-topic-name {
+    input[type="text"] {
+      width: 80%;
     }
-    #main-content {
-      margin-top: 20px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-    .stats {
-        padding-top: 20%;
-    }
-    .stats h2 {
-        color: teal;
-        font-size: 200%;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .big-stats div h2 {
-      font-size: 28px;
-    }
-    .report-header {
-      margin-bottom: 0;
-    }
-    #pipeline-wrapper {
-        padding-bottom: 20px;
-        padding-top: 10px;
-    }
-    .settings-grid-block {
-        min-height: 70px;
-        margin-bottom: 10px;
-    }
-    .settings-grid-row {
-        margin-bottom: 20px;
-    }
-    .edit-topic-name {
-        input[type="text"] {
-            width: 80%;
-        }
-    }
+  }
 }
 
 @media(min-width:992px){
-    h1 {
-        font-size: 200%;
-    }
-    #main-content {
-      margin-top: 20px;
-      padding-right: 20px;
-      padding-left: 5px;
-    }
+  h1 {
+    font-size: 200%;
+  }
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
 
-    .big-stats {
-      margin-top: -40px;
+  .big-stats {
+    margin-top: -40px;
+  }
+  .stats {
+    padding-top: 15%;
+  }
+  .stats h2 {
+    color: teal;
+    font-size: 300%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .big-stats div h2 {
+    font-size: 48px;
+  }
+  .report-header {
+    padding-bottom: 40px;
+  }
+  #pipeline-wrapper {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  .edit-topic-name {
+    input[type="text"] {
+      width: 80%;
     }
-    .stats {
-        padding-top: 15%;
-    }
-    .stats h2 {
-        color: teal;
-        font-size: 300%;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .big-stats div h2 {
-      font-size: 48px;
-    }
-    .report-header {
-      padding-bottom: 40px;
-    }
-    #pipeline-wrapper {
-        padding-bottom: 0;
-        padding-top: 10px;
-    }
-    .edit-topic-name {
-        input[type="text"] {
-            width: 80%;
-        }
-    }
+  }
 }
 
 @media(min-width:1200px){
-    h1 {
-        font-size: 220%;
-    }
-    #main-content {
-      margin-top: 20px;
-      padding-right: 20px;
-      padding-left: 5px;
-    }
+  h1 {
+    font-size: 220%;
+  }
+  #main-content {
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
 
-    .big-stats {
-      margin-top: -40px;
+  .big-stats {
+    margin-top: -40px;
+  }
+  .stats {
+    padding-top: 10%;
+  }
+  .stats h2 {
+    color: teal;
+    font-size: 350%;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .big-stats div h2 {
+    font-size: 48px;
+  }
+  .report-header {
+    padding-bottom: 40px;
+  }
+  #pipeline-wrapper {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  .settings-grid-row {
+    margin-bottom: 20px;
+  }
+  .edit-topic-name {
+    input[type="text"] {
+      width: 80%;
     }
-    .stats {
-        padding-top: 10%;
-    }
-    .stats h2 {
-        color: teal;
-        font-size: 350%;
-        margin-top: 0px;
-        margin-bottom: 0;
-    }
-    .big-stats div h2 {
-      font-size: 48px;
-    }
-    .report-header {
-      padding-bottom: 40px;
-    }
-    #pipeline-wrapper {
-        padding-bottom: 0;
-        padding-top: 10px;
-    }
-    .settings-grid-row {
-        margin-bottom: 20px;
-    }
-    .edit-topic-name {
-        input[type="text"] {
-            width: 80%;
-        }
-    }
+  }
 }
 
 @media print {
@@ -1016,7 +1016,7 @@ span.small-labels {
 }
 
 .selectize-control.form-control {
-    border: 0;
+  border: 0;
 }
 
 .overflow-visible {
@@ -1024,15 +1024,15 @@ span.small-labels {
 }
 
 .dropdown-form {
- padding-left: 20px;
+  padding-left: 20px;
 }
 
 .datepicker.datepicker-dropdown {
- min-width: 0;
+  min-width: 0;
 
- tr{
-   height: 0;
- }
+  tr{
+    height: 0;
+  }
 }
 
 .search-results {
@@ -1058,7 +1058,7 @@ span.small-labels {
 // === SETTINGS ====
 
 .integration-item {
-    padding:20px;
-    border: 1px solid #eee;
-    margin-bottom: 40px;
+  padding:20px;
+  border: 1px solid #eee;
+  margin-bottom: 40px;
 }

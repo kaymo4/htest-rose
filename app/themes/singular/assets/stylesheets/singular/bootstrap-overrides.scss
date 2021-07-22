@@ -2,17 +2,24 @@
 // See: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
 // Note: Only configure variables here if changed from the defaults linked above.
 // This helps identify which Bootstrap variables we've actually overridden.
+//
+//blue: #2aace8
+//orange: #e8662a
+//green: #2ae866
+//violet: #662ae8
+//red: #e82a4d
+//yellow: #e8c52a
 
 // Colours: Brand Defaults
-$brand-primary:         #3cceff;
+$brand-primary:         #2aace8;
 $brand-link:            #004084;
-$link-color:            #666;
+$link-color:             #2aace8;
 $table-border-color:    #fff;
 $breadcrumb-bg:         #eee;
-$body-bg:               #efefef;
+$body-bg:               #e8662a;
 
 // Navbar links
-$navbar-default-link-color: #004084;
+$navbar-default-link-color: #2aace8; //#004084;
 $navbar-default-color:      #fff;
 $navbar-default-bg:         #fff;
 $navbar-default-border:     #fff;

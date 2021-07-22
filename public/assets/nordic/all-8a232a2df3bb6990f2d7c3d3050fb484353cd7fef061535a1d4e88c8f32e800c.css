@@ -52,6 +52,7 @@ all.scss:6
 /Users/kaymo/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:22:in `eval'
 /Users/kaymo/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:22:in `<main>'
 */
+
 body:before {
   white-space: pre;
   font-family: monospace;

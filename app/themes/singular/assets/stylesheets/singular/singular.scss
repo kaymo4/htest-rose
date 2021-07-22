@@ -929,9 +929,10 @@ li.article-more {
 h5.category-header {
   font-size: 110%;
   font-weight: 600;
+  color:rgb(36, 85, 102);
 
   > a {
-    color: #333;
+    color: orange;
   }
 }
 
@@ -1129,6 +1130,7 @@ h4.qna {
   margin-top: 0px;
   font-weight: bold;
   margin-bottom: 15px;
+
 }
 
 //  === OTHER MEDIA QUERIES ===

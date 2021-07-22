@@ -5,8 +5,7 @@ gem 'rails', '4.2.11.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.20.0'
 gem 'pg_search'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.7'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -16,6 +15,20 @@ gem 'nokogiri', '>= 1.10.4'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+
+# Use SCSS and boostrap for stylesheets
+gem 'sass-rails'
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'sprockets-rails', '>=2.1.4'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'autoprefixer-rails'
+gem 'twitter-bootstrap-rails'
+
+# Bootstrap/UI Gems
+gem 'bootstrap_form'
+gem 'simple_form'
+
+gem 'font-awesome-sass'
 
 # Inline js validations
 gem 'client_side_validations'
@@ -99,13 +112,7 @@ gem 'fog-aws'
 gem "jquery-fileupload-rails"
 gem 'mini_magick'
 
-# Bootstrap/UI Gems
-gem 'font-awesome-sass'
-gem 'bootstrap-sass'
-gem 'bootstrap_form'
-gem 'simple_form'
-gem 'twitter-bootstrap-rails'
-gem 'twitter-bootstrap-rails-confirm'
+
 gem 'rdiscount'
 gem 'selectize-rails'
 gem "bootstrap-switch-rails", '3.3.3' # NOTE: IOS style switches broke with 3.3.4

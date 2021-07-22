@@ -1,9 +1,7 @@
-// Import Helpy variables and boostrap overrides
-@import "bootstrap-overrides";
-
-// Import Bootstrap
 // Note: "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
+// Import Helpy variables and boostrap overrides
+@import "bootstrap-overrides";
 @import "bootstrap";
 
 // Import font-awesome

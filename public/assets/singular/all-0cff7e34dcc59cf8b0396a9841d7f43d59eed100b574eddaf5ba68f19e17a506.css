@@ -1,0 +1,58 @@
+/*
+Error: File to import not found or unreadable: jquery-ui.
+        on line 5 of all.scss
+
+1: // Import Helpy variables and boostrap overrides
+2: @import "bootstrap-overrides";
+3: 
+4: // scss-lint:enable ImportPath
+5: @import "jquery-ui";
+6: 
+7: // Import Bootstrap
+8: // Note: "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+9: @import "bootstrap";
+10: @import "bootstrap/theme";
+
+Backtrace:
+all.scss:5
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:22:in `eval'
+/Users/kaymo/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:22:in `<main>'
+*/
+
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: jquery-ui.\A         on line 5 of all.scss\A \A 1: // Import Helpy variables and boostrap overrides\A 2: @import \"bootstrap-overrides\";\A 3: \A 4: // scss-lint:enable ImportPath\A 5: @import \"jquery-ui\";\A 6: \A 7: // Import Bootstrap\A 8: // Note: \"bootstrap-sprockets\" must be imported before \"bootstrap\" and \"bootstrap/variables\"\A 9: @import \"bootstrap\";\A 10: @import \"bootstrap/theme\";"; }
