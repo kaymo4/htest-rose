@@ -647,7 +647,7 @@ DEPENDENCIES
   ancestry
   annotate
   attachinary
-  autoprefixer-rails
+  autoprefixer-rails (= 10.2.5.1)
   awesome_print
   best_in_place (~> 3.1)
   better_errors
