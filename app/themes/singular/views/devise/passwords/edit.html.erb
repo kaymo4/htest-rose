@@ -5,7 +5,7 @@
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
 
-<p>Your new password must contain at least 8 characters, including a mix of letters (upper and lower case) and numbers. Thank you! </p>
+<p style="color:#fff;">Your new password must contain at least 8 characters, including a mix of letters (upper and lower case) and numbers. Thank you! </p>
 
 
   <%= f.hidden_field :reset_password_token, :value => @user.reset_password_token %>
